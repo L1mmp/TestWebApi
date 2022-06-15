@@ -16,7 +16,7 @@ namespace TestWebApi.Repositories
 		/// </summary>
 		/// <param name="id"> Id. </param>
 		/// <returns> Пользователя. </returns>
-		public User GetUserById(Guid id);
+		public User? GetUserById(Guid id);
 
 		/// <summary>
 		/// Получает всех пользователей.
