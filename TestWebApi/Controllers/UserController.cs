@@ -81,7 +81,7 @@ namespace TestWebApi.Controllers
 		/// </summary>
 		/// <param name="user"> Пользователь. </param>
 		/// <returns> true, при успешнном изменении пользователя. </returns>
-		[Route("Update"), HttpPost]
+		[Route("Update"), HttpPut]
 		public ActionResult<bool> UpdateUser([FromBody] User user)
 		{
 			if (_userRepository.UpdateUser(user))
